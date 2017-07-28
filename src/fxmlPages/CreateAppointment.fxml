@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxmlPages.CreateAppointmentController">
+	<children>
+		<GridPane layoutX="10.0" layoutY="10.0" prefHeight="634.9999000000025" prefWidth="817.0">
+			<children>
+				<Label fx:id="personIDlabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="204.0" text="Patient ID :" textAlignment="CENTER" GridPane.rowIndex="2">
+					<font>
+						<Font name="Lucida Console" size="14.0" fx:id="x1" />
+					</font>
+				</Label>
+				<TextField fx:id="textPatientId" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+				<Label fx:id="labelFirstName" alignment="CENTER" font="$x1" prefHeight="23.0" prefWidth="196.0" text="First Name :" GridPane.rowIndex="3" />
+				<Label id="labelFirstName" fx:id="labelMiddleName" alignment="CENTER" font="$x1" prefHeight="23.0" prefWidth="196.0" text="Middle Name :" GridPane.rowIndex="4" />
+				<Label id="labelFirstName" fx:id="labelLastName" alignment="CENTER" font="$x1" prefHeight="23.0" prefWidth="196.0" text="Last Name :" GridPane.rowIndex="5" />
+				<Label id="labelFirstName" fx:id="labeldob" alignment="CENTER" font="$x1" prefHeight="23.0" prefWidth="196.0" text="Date Of Birth :" GridPane.rowIndex="6" />
+				<Label id="labelFirstName" fx:id="labelssn" alignment="CENTER" font="$x1" prefHeight="23.0" prefWidth="196.0" text="Social Security No :" GridPane.rowIndex="7" />
+				<Label id="labelFirstName" fx:id="labelCountry" alignment="CENTER" font="$x1" prefHeight="23.0" prefWidth="196.0" text="Country :" GridPane.rowIndex="8" />
+				<Label id="labelFirstName" fx:id="labelPassportNo" alignment="CENTER" font="$x1" prefHeight="23.0" prefWidth="196.0" text="Passport No :" GridPane.rowIndex="9" />
+				<TextField id="personIDtext" fx:id="textFirstName" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+				<Button fx:id="btnFillForm" mnemonicParsing="false" onAction="#handleFillFormButtonAction" text="Fill" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+				<TextField id="personIDtext" fx:id="textMiddleName" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+				<TextField id="personIDtext" fx:id="textLastName" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+				<TextField id="personIDtext" fx:id="textssn" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+				<TextField id="personIDtext" fx:id="textCountry" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+				<TextField id="personIDtext" fx:id="textPassportNo" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+				<TextField id="personIDtext" fx:id="textPersonId" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+				<Button fx:id="btnConfirmAppointment" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addAppointmentButtonClick" prefWidth="182.0" text="Confirm Apointment" GridPane.columnIndex="0" GridPane.rowIndex="11" />
+				<Button id="btnGoBAck" fx:id="btnGoBack" mnemonicParsing="false" onAction="#handleGoBackButtonAction" prefWidth="174.0" text="Close" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+				
+				<Label id="labelFirstName" fx:id="labelSelectDoctor" alignment="CENTER" font="$x1" prefHeight="23.0" prefWidth="196.0" text="Select Doctor :" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+				<ChoiceBox fx:id="ddlDoctors" prefWidth="159.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+					<items>
+						<FXCollections fx:factory="observableArrayList" />
+					</items>
+				</ChoiceBox>
+				<Label id="labelFirstName" fx:id="labelDescription" alignment="CENTER" font="$x1" prefHeight="23.0" prefWidth="196.0" text="Patient Description :" GridPane.rowIndex="10" />
+				<TextArea fx:id="txtAreaDescription" prefHeight="200.0" prefWidth="200.0" promptText="Enter Patioent's Description" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+				<Label id="labelFirstName" fx:id="labelSelectStartTime" alignment="CENTER" font="$x1" prefHeight="23.0" prefWidth="196.0" text="Start Time : " GridPane.columnIndex="2" GridPane.rowIndex="5" />
+				<ChoiceBox fx:id="ddlStartTime" prefWidth="159.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+					<items>
+						<FXCollections fx:factory="observableArrayList" />
+					</items>
+				</ChoiceBox>
+				<Label id="labelFirstName" fx:id="labelSelectEndTime" alignment="CENTER" font="$x1" prefHeight="23.0" prefWidth="196.0" text="End Time : " GridPane.columnIndex="2" GridPane.rowIndex="6" />
+				<ChoiceBox fx:id="ddlEndTime" prefWidth="159.0" GridPane.columnIndex="3" GridPane.rowIndex="6">
+					<items>
+						<FXCollections fx:factory="observableArrayList" />
+					</items>
+				</ChoiceBox>
+				<Label id="labelFirstName" fx:id="labelServiceType" alignment="CENTER" font="$x1" prefHeight="23.0" prefWidth="196.0" text="Service Type : " GridPane.columnIndex="2" GridPane.rowIndex="7" />
+				<ChoiceBox fx:id="ddlServices" prefWidth="159.0" GridPane.columnIndex="3" GridPane.rowIndex="7">
+					<items>
+						<FXCollections fx:factory="observableArrayList" />
+					</items>
+				</ChoiceBox>
+				<Label id="labelFirstName" fx:id="labelSelectDate" alignment="CENTER" font="$x1" prefHeight="23.0" prefWidth="196.0" text="Select date : " GridPane.columnIndex="2" GridPane.rowIndex="4" />
+				<DatePicker fx:id="dobDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+				<DatePicker fx:id="appointmentDatePicker" prefHeight="39.0" prefWidth="162.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+					<TableView fx:id="docAppointmentTableView" prefHeight="142.0" prefWidth="397.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="8" GridPane.rowSpan="4">
+              <columns>
+                <TableColumn fx:id="appDocCol" prefWidth="162.0" text="Doctor" />
+                <TableColumn fx:id="AppCol" maxWidth="1.7976931348623157E308" minWidth="0.0" prefWidth="195.0" text="Appointment" />
+              </columns>
+               <GridPane.margin>
+                  <Insets bottom="50.0" left="50.0" right="50.0" />
+               </GridPane.margin>
+            </TableView>
+			</children>
+			<columnConstraints>
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="229.0" minWidth="10.0" prefWidth="209.0" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="201.0" minWidth="10.0" prefWidth="150.0" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="286.0" minWidth="10.0" prefWidth="200.0" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="277.0" minWidth="10.0" prefWidth="258.0" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints maxHeight="211.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="211.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="211.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="211.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="211.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="222.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="247.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="291.0" minHeight="10.0" prefHeight="57.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="335.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="360.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="397.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+			</rowConstraints>
+		</GridPane>
+	</children>
+</AnchorPane>

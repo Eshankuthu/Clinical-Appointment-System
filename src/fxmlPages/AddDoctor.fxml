@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<GridPane prefHeight="634.9999000000025" prefWidth="817.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxmlPages.CreateAppointmentController">
+  <children>
+    <Label alignment="BOTTOM_RIGHT" prefHeight="51.0" prefWidth="407.5" text="CREATE &#10;&#10;" textAlignment="CENTER" textFill="BLACK" textOverrun="LEADING_WORD_ELLIPSIS" underline="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+      <font>
+        <Font name="Arial Bold" size="20.0" fx:id="x2" />
+      </font>
+    </Label>
+    <Label fx:id="personIDlabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="204.0" text="Patient ID :" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="3">
+      <font>
+        <Font name="Lucida Console" size="14.0" fx:id="x1" />
+      </font>
+    </Label>
+    <TextField fx:id="textPatientId" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    <Label fx:id="labelFirstName" alignment="CENTER" font="$x1" prefHeight="23.0" prefWidth="196.0" text="First Name :" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+    <Label id="labelFirstName" fx:id="labelMiddleName" alignment="CENTER" font="$x1" prefHeight="23.0" prefWidth="196.0" text="Middle Name :" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+    <Label id="labelFirstName" fx:id="labelLastName" alignment="CENTER" font="$x1" prefHeight="23.0" prefWidth="196.0" text="Last Name :" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+    <Label id="labelFirstName" fx:id="labeldob" alignment="CENTER" font="$x1" prefHeight="23.0" prefWidth="196.0" text="Date Of Birth :" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+    <Label id="labelFirstName" fx:id="labelssn" alignment="CENTER" font="$x1" prefHeight="23.0" prefWidth="196.0" text="Social Security No :" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+    <Label id="labelFirstName" fx:id="labelCountry" alignment="CENTER" font="$x1" prefHeight="23.0" prefWidth="196.0" text="Country :" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+    <Label id="labelFirstName" fx:id="labelPassportNo" alignment="CENTER" font="$x1" prefHeight="23.0" prefWidth="196.0" text="Passport No :" GridPane.columnIndex="0" GridPane.rowIndex="10" />
+    <TextField id="personIDtext" fx:id="textFirstName" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <Button fx:id="btnFillForm" mnemonicParsing="false" onAction="#handleFillFormButtonAction" text="Fill" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+    
+    <TextField id="personIDtext" fx:id="textMiddleName" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+    <TextField id="personIDtext" fx:id="textLastName" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+    <TextField id="personIDtext" fx:id="textdob" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+    <TextField id="personIDtext" fx:id="textssn" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+    <TextField id="personIDtext" fx:id="textCountry" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+    <TextField id="personIDtext" fx:id="textPassportNo" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+    <TextField id="personIDtext" fx:id="textPersonId" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+    <TextField id="personIDtext" fx:id="textAppId" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+    <Button fx:id="btnConfirmAppointment" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addAppointmentButtonClick" prefWidth="182.0" text="Confirm Apointment" GridPane.columnIndex="0" GridPane.rowIndex="11" />
+     <Label alignment="BOTTOM_LEFT" font="$x2" prefHeight="51.0" prefWidth="407.5" text="APPOINTMENT&#10;" textAlignment="CENTER" textFill="BLACK" textOverrun="LEADING_WORD_ELLIPSIS" underline="false" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+    <Button id="btnGoBAck" fx:id="btnGoBack" mnemonicParsing="false" onAction="#handleGoBackButtonAction" prefWidth="174.0" text="Go Back" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+    <Label id="labelFirstName" fx:id="labelSelectDoctor" alignment="CENTER" font="$x1" prefHeight="23.0" prefWidth="196.0" text="Select Doctor :" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+    <Label id="labelFirstName" fx:id="labelSelectService" alignment="CENTER" font="$x1" prefHeight="23.0" prefWidth="196.0" text="Select Service :" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+    <ChoiceBox fx:id="ddlDoctors" prefWidth="159.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+    <items>
+        <FXCollections  fx:factory="observableArrayList">
+  
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+   <ChoiceBox fx:id="ddlServices" prefWidth="159.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+      <items>
+        <FXCollections  fx:factory="observableArrayList">
+  
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+  </children>
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="229.0" minWidth="10.0" prefWidth="209.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="201.0" minWidth="10.0" prefWidth="150.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="286.0" minWidth="10.0" prefWidth="200.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="277.0" minWidth="10.0" prefWidth="258.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="211.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="211.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="211.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="211.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="211.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="222.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="247.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="291.0" minHeight="10.0" prefHeight="57.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="335.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="360.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="397.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+</GridPane>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="1.7976931348623157E308" prefHeight="1000.0" prefWidth="788.0" snapToPixel="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxmlPages.CaHomeController">
+	<columnConstraints>
+		<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints maxHeight="95.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+		<RowConstraints maxHeight="500.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
+		<RowConstraints maxHeight="95.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
+	</rowConstraints>
+	<children>
+		<GridPane prefHeight="59.0" prefWidth="788.0">
+			<children>
+				<Button id="viewDoctor" fx:id="viewAppointment" mnemonicParsing="false" onAction="#handleviewAppointmentAction" prefWidth="155.0" text="View All Appointments" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets top="40.0" />
+               </GridPane.margin></Button>
+				<Button id="viewDoctor" fx:id="bookedList" mnemonicParsing="false" onAction="#handleBookedListAction" prefWidth="155.0" text="Booked" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets top="40.0" />
+               </GridPane.margin></Button>
+				<Button id="viewDoctor" fx:id="clockInSheet" mnemonicParsing="false" onAction="#handleClockInSheetAction" prefWidth="155.0" text="Clocked In" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="11" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets top="40.0" />
+               </GridPane.margin></Button>
+				<Button id="viewDoctor" fx:id="clockOutSheetAction" mnemonicParsing="false" onAction="#handleClockOutSheetAction" prefWidth="155.0" text="Clocked Out" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets top="40.0" />
+               </GridPane.margin></Button>
+				<Button id="viewDoctor" fx:id="btnListPaid" mnemonicParsing="false" onAction="#handleListPaidAction" prefWidth="155.0" text="Paid" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets top="40.0" />
+               </GridPane.margin></Button>
+				<Button id="viewDoctor" fx:id="btnListCancelled" mnemonicParsing="false" onAction="#handleListCancelledAction" prefWidth="155.0" text="Cancelled" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets top="40.0" />
+               </GridPane.margin></Button>
+				<Button fx:id="createNewAppointment" mnemonicParsing="false" onAction="#handlecreateNewAppointmentButtonAction" prefWidth="155.0" text="Create New Appointment" textAlignment="LEFT" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets top="40.0" />
+               </GridPane.margin></Button>
+					<Button fx:id="DoctorList" mnemonicParsing="false" onAction="#handleDoctorListButtonAction" prefWidth="155.0" text="Doctor List" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Button fx:id="DoctorList" mnemonicParsing="false" onAction="#handlePatientListButtonAction" prefWidth="155.0" text="Patient List" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Button fx:id="paymentList" mnemonicParsing="false" onAction="#handlepaymentListButtonAction" prefWidth="155.0" text="Payments" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+					
+			</children>
+			<columnConstraints>
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" />
+				<RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" />
+				<RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+				<RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+				<RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+				<RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+				<RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+				<RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+				<RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+				<RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+				<RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+				<RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+			</rowConstraints>
+		</GridPane>
+		<TableView fx:id="AppointmentTableView" maxHeight="1.7976931348623157E308" prefHeight="550.0" prefWidth="788.0" scaleShape="true" GridPane.rowIndex="1">
+			<columns>
+				<TableColumn fx:id="AppointmentID" maxWidth="5000.0" minWidth="10.0" prefWidth="134.0" text="ID" />
+				<TableColumn fx:id="patCol" maxWidth="5000.0" minWidth="10.0" prefWidth="134.0" text="Patient" />
+				<TableColumn fx:id="Doctor" maxWidth="5000.0" minWidth="10.0" prefWidth="134.0" text="Doctor" />
+				<TableColumn fx:id="StartTime" maxWidth="5000.0" minWidth="10.0" prefWidth="134.0" text="Start Time" />
+				<TableColumn fx:id="EndTime" maxWidth="5000.0" minWidth="10.0" prefWidth="134.0" text="End Time" />
+				<TableColumn fx:id="Status" maxWidth="5000.0" minWidth="10.0" prefWidth="134.0" text="Status" />
+			</columns>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+		</TableView>
+		<GridPane prefHeight="95.0" prefWidth="788.0" GridPane.rowIndex="2">
+			<children>
+				<Button id="viewDoctor" fx:id="btnUpdateApp" mnemonicParsing="false" onAction="#handleUpdateAction" prefWidth="155.0" text="Update Appointment" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets top="20.0" />
+               </GridPane.margin></Button>
+				<Button id="viewDoctor" fx:id="btnClockIn" mnemonicParsing="false" onAction="#handleClockInAction" prefWidth="155.0" text="Clock In" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets top="20.0" />
+               </GridPane.margin></Button>
+				<Button id="viewDoctor" fx:id="btnClockOut" mnemonicParsing="false" onAction="#handleClockOutAction" prefWidth="155.0" text="Clock Out" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets top="20.0" />
+               </GridPane.margin></Button>
+				<Button id="viewDoctor" fx:id="btnPay" mnemonicParsing="false" onAction="#handlePaymentAction" prefWidth="155.0" text="Payment" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets top="20.0" />
+               </GridPane.margin></Button>
+				<Button id="viewDoctor" fx:id="btnCancel" mnemonicParsing="false" onAction="#handleCancelAppointmentAction" prefWidth="155.0" text="Cancel Appointment" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets top="20.0" />
+               </GridPane.margin></Button>
+			</children>
+			<columnConstraints>
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+				<ColumnConstraints />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints />
+			</rowConstraints>
+		</GridPane>
+	</children>
+</GridPane>
